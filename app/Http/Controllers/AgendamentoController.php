@@ -116,7 +116,7 @@ class AgendamentoController extends Controller
 
         $agendamento->delete();
 
-        return response()->json(['message' => 'Usuário deletado com sucesso!',
+        return response()->json(['message' => 'Agendamento deletado com sucesso!',
                                 'usuario' => new AgendamentoResource($agendamento)]); 
     }
 }
